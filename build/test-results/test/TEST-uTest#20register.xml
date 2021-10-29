@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uTest register" tests="2" skipped="2" failures="0" errors="0" timestamp="2021-10-29T02:51:22" hostname="LAPTOP-NKQOBQF1" time="0.087">
+  <properties/>
+  <testcase name="Enter the registry by clicking on Join Today" classname="uTest register" time="0.026">
+    <skipped/>
+  </testcase>
+  <testcase name="Upload form to fill out" classname="uTest register" time="0.017">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5a0b9fde
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@73c13aa1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@28df407
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest, When He clicks on the Join Today button, Then he opens the registration form
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest, When He clicks on the Join Today button, Then he opens the registration form]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest, When He clicks on the Join Today button, Then he opens the registration form]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Enter the registry by clicking on Join Today
+---------------------------------------------------------------------------------
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5e61e998
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@60fc0cfe
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@223215dd
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Upload form to fill out:Given than Rodrigo inserts data in the form, When He starts the record, Then He creates a new user on uTest page
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest, When He clicks on the Join Today button, Then he opens the registration form, Upload form to fill out:Given than Rodrigo inserts data in the form, When He starts the record, Then He creates a new user on uTest page]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest, When He clicks on the Join Today button, Then he opens the registration form, Upload form to fill out:Given than Rodrigo inserts data in the form, When He starts the record, Then He creates a new user on uTest page]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Upload form to fill out
+---------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
