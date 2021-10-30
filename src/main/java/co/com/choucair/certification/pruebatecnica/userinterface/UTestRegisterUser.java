@@ -6,29 +6,29 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class UTestRegisterUser extends PageObject {
 
-    public static final Target INPUT_FIRST_NAME = Target.the("where the user will enter their name").located(By.className("ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched"));
+    public static final Target INPUT_FIRST_NAME = Target.the("where the user will enter their name").located(By.id("firstName"));
 
-    public static final Target INPUT_LAST_NAME = Target.the("where the user will enter their last name").located(By.className("ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-touched"));
+    public static final Target INPUT_LAST_NAME = Target.the("where the user will enter their last name").located(By.id("lastName"));
 
-    public static final Target INPUT_EMAIL_ADDRESS = Target.the("where the user will enter their email address").located(By.className("ng-pristine ng-empty ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern ng-touched"));
+    public static final Target INPUT_EMAIL_ADDRESS = Target.the("where the user will enter their email address").located(By.id("email"));
 
-    public static final Target SELECT_MONTH = Target.the("where the user selects their month of birth").located(By.className("ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"));
+    public static final Target SELECT_MONTH = Target.the("where the user selects their month of birth").located(By.id("birthMonth"));
 
-    public static final Target SELECT_DAY = Target.the("where the user selects their day of birth").located(By.xpath("//*[@id=\"birthDay\"]"));
+    public static final Target SELECT_DAY = Target.the("where the user selects their day of birth").located(By.id("birthDay"));
 
-    public static final Target SELECT_YEAR = Target.the("where the user selects their year of birth").located(By.className("ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"));
+    public static final Target SELECT_YEAR = Target.the("where the user selects their year of birth").located(By.id("birthYear"));
 
-    public static final Target INPUT_LANGUAGES = Target.the("where the user enters the languages he speaks").located(By.className("ui-select-search input-xs ng-pristine ng-valid ng-empty ng-touched"));
+    public static final Target INPUT_LANGUAGES = Target.the("where the user enters the languages he speaks").located(By.className("ui-select-match"));
 
-    public static final Target NEXT_BUTTON_LOCATION = Target.the("Where the user will advance to the next form").located(By.className("btn btn-blue"));
+    public static final Target NEXT_BUTTON_LOCATION = Target.the("Where the user will advance to the next form").located(By.className("material-icons"));
 
-    public static final Target INPUT_CITY = Target.the("Where the user enters the city").located(By.xpath("//*[@id=\"city\"]"));
+    public static final Target INPUT_CITY = Target.the("Where the user enters the city").located(By.className("form-group address col-xs-12 col-sm-12 col-md-12 col-lg-12"));
 
-    public static final Target SELECT_REGION = Target.the("Where the user selects the region").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/span/span[2]"));
+   // public static final Target SELECT_REGION = Target.the("Where the user selects the region").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/span/span[2]"));
 
-    public static final Target INPUT_POSTAL_CODE = Target.the("Where the user enters the postal code").located(By.xpath("//*[@id=\"zip\"]"));
+    public static final Target INPUT_POSTAL_CODE = Target.the("Where the user enters the postal code").located(By.id("zip"));
 
-    public static final Target SELECT_COUNTRY = Target.the("Where the user selects the country ").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/div/input[1]"));
+    public static final Target SELECT_COUNTRY = Target.the("Where the user selects the country ").located(By.className("ui-select"));
 
     public static final Target NEXT_BUTTON_DEVICES = Target.the("Where the user advances to the next form ").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/div/a"));
 

@@ -24,13 +24,13 @@ public class uTestStepDefinitions {
 
     }
 
-    @When("^He clicks on the Join Today button$")
+    @When("^He clicks on the (.*) button$")
     public void heClicksOnTheJoinTodayButton(String registeredUser) {
         OnStage.theActorInTheSpotlight().attemptsTo(RegisterUser.the(registeredUser));
 
     }
 
-    @Then("^he opens the registration form$")
+    @Then("^he opens the registration (.*)$")
     public void heOpensTheRegistrationForm(String question) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }

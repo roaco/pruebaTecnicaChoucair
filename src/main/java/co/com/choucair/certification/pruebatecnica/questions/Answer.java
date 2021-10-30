@@ -12,8 +12,6 @@ public class Answer implements Question<Boolean> {
     public Answer(String question){
         this.question = question;
     }
-
-
     public static Answer toThe(String question) {
         return new Answer(question);
     }
@@ -21,8 +19,8 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String nameCourse = Text.of(UTestRegisterUser.FINISH_BUTTON).viewedBy(actor).asString();
-        if(question.equals(nameCourse)){
+        String userRegisterAn = Text.of(UTestRegisterUser.FINISH_BUTTON).viewedBy(actor).asString();
+        if(question.equals(userRegisterAn)){
             result = true;
         }else{
             result = false;

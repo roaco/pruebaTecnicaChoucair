@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">14.707s</div>
+<div class="counter">35.502s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,10 +76,91 @@
 <a name="Enter the registry by clicking on Join Today"></a>
 <h3 class="failures">Enter the registry by clicking on Join Today</h3>
 <span class="code">
-<pre>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(String) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^He clicks on the Join Today button$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
-Step text: He clicks on the Join Today button
-	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:111)
-	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:66)
+<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:811)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$0EutWkL7.performAs$accessor$KqOuDTr1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$0EutWkL7.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser.performAs(RegisterUser.java:28)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser$ByteBuddy$Cc2Tk5sO.performAs$accessor$cN1PrLIt(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser$ByteBuddy$Cc2Tk5sO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(uTestStepDefinitions.java:29)
+	at ✽.He clicks on the Join Today button(src/test/resources/features/uTest.feature:9)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.className: form-group address col-xs-12 col-sm-12 col-md-12 col-lg-12 to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:811)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$0EutWkL7.performAs$accessor$KqOuDTr1(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$0EutWkL7.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser.performAs(RegisterUser.java:28)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser$ByteBuddy$Cc2Tk5sO.performAs$accessor$cN1PrLIt(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.certification.pruebatecnica.tasks.RegisterUser$ByteBuddy$Cc2Tk5sO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(uTestStepDefinitions.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
 	at cucumber.api.TestStep.run(TestStep.java:83)
@@ -134,6 +215,36 @@ Step text: He clicks on the Join Today button
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.form\-group\ address\ col\-xs\-12\ col\-sm\-12\ col\-md\-12\ col\-lg\-12&quot;}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-NKQOBQF1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\roaco\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7845a7f8a1ccd0216a10efa02a29922e
+*** Element info: {Using=class name, value=form-group address col-xs-12 col-sm-12 col-md-12 col-lg-12}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 98 more
 </pre>
 </span>
 </div>
@@ -150,7 +261,7 @@ Step text: He clicks on the Join Today button
 </thead>
 <tr>
 <td class="failures">Enter the registry by clicking on Join Today</td>
-<td class="failures">14.707s</td>
+<td class="failures">35.502s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -161,29 +272,47 @@ Step text: He clicks on the Join Today button
 <pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2d4378e6
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@11ca443b
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@50e8bf46
-oct 29, 2021 4:19:08 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+oct 30, 2021 4:16:14 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 4840
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 2843
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1635499151.493][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
-oct 29, 2021 4:19:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1635585378.060][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+oct 30, 2021 4:16:18 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1c2dff9f
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@9b54af2
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@27f0aa1d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@58b3df6b
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3c469024
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@51395f9
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button, Then he opens the registration form
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button, Then he opens the registration form]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button, Then he opens the registration form]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4e64719
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1b45aa60
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3bf6aee1
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5bc34d6f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6e184b52
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5b0f0b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@ea2d52a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@614a33ba
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@8a0e37a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth, Rodrigo clicks on where the user enters the languages he speaks]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@16ff1c95
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth, Rodrigo clicks on where the user enters the languages he speaks, Rodrigo clicks on Where the user will advance to the next form]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@c4829af
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1948dcee
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth, Rodrigo clicks on where the user enters the languages he speaks, Rodrigo clicks on Where the user will advance to the next form, Rodrigo enters 'Armenia' into Where the user enters the city]], Then he opens the registration form
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth, Rodrigo clicks on where the user enters the languages he speaks, Rodrigo clicks on Where the user will advance to the next form, Rodrigo enters 'Armenia' into Where the user enters the city]], Then he opens the registration form]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Enter the registry by clicking on Join Today:Given than Rodrigo wants to register in uTest [Rodrigo open up [Rodrigo opens the U test page], Rodrigo login [Rodrigo clicks on button that shows us the form to register a new user ]], When He clicks on the Join Today button [Rodrigo register user [Rodrigo enters 'Rodrigo' into where the user will enter their name, Rodrigo enters 'Acosta Restrepo' into where the user will enter their last name, Rodrigo enters 'prueba@utest.com' into where the user will enter their email address, Rodrigo select January on where the user selects their month of birth, Rodrigo select 11 on where the user selects their day of birth, Rodrigo select 1991 on where the user selects their year of birth, Rodrigo clicks on where the user enters the languages he speaks, Rodrigo clicks on Where the user will advance to the next form, Rodrigo enters 'Armenia' into Where the user enters the city]], Then he opens the registration form]
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -192,10 +321,10 @@ INFORMACIÓN: Detected dialect: W3C
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED WITH ERROR: Enter the registry by clicking on Join Today
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP When He clicks on the Join Today button
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(String) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^He clicks on the Join Today button$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+TEST FAILED: Enter the registry by clicking on Join Today
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Rodrigo enters 'Armenia' into Where the user enters the city
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
 </pre>
 </span>
 </div>
@@ -207,7 +336,7 @@ TEST FAILED WITH ERROR: Enter the registry by clicking on Join Today
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 29/10/2021 04:19:24 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 30/10/2021 04:16:51 AM</p>
 </div>
 </div>
 </body>
