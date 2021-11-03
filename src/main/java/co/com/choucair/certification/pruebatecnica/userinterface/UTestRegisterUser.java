@@ -22,9 +22,7 @@ public class UTestRegisterUser extends PageObject {
 
     public static final Target NEXT_BUTTON_LOCATION = Target.the("Where the user will advance to the next form").located(By.className("material-icons"));
 
-    public static final Target INPUT_CITY = Target.the("Where the user enters the city").located(By.className("form-group address col-xs-12 col-sm-12 col-md-12 col-lg-12"));
-
-   // public static final Target SELECT_REGION = Target.the("Where the user selects the region").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/span/span[2]"));
+    public static final Target INPUT_CITY = Target.the("Where the user enters the city").located(By.id("city"));
 
     public static final Target INPUT_POSTAL_CODE = Target.the("Where the user enters the postal code").located(By.id("zip"));
 
