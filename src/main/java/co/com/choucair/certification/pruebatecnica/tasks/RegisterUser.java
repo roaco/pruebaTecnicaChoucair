@@ -1,5 +1,6 @@
 package co.com.choucair.certification.pruebatecnica.tasks;
 
+import co.com.choucair.certification.pruebatecnica.model.UTestData;
 import co.com.choucair.certification.pruebatecnica.userinterface.UTestJoinTodayPage;
 import co.com.choucair.certification.pruebatecnica.userinterface.UTestRegisterUser;
 import net.serenitybdd.screenplay.Actor;
@@ -15,49 +16,21 @@ import org.openqa.selenium.Keys;
 import java.security.Key;
 
 public class RegisterUser implements Task {
+    UTestData uTestData;
 
-    private String registeredUser;
-    private String strFirstName;
-    private String strLastName;
-    private String strEmailAddress;
-    private String strMonthBirth;
-    private String strDayBirth;
-    private String strYearBirth;
-    private String strInputLanguage;
-    private String strInputCity;
-    private String strInputZIP;
-    private String strInputCountry;
-    private String strPassword;
-    private String strConfirmPassword;
-
-    public RegisterUser(String strFirstName, String strLastName, String strEmailAddress, String strMonthBirth, String strDayBirth, String strYearBirth, String strInputLanguage, String strInputCity, String strInputZIP, String strInputCountry, String strPassword, String strConfirmPassword) {
-        this.strFirstName = strFirstName;
-        this.strLastName = strLastName;
-        this.strEmailAddress = strEmailAddress;
-        this.strMonthBirth = strMonthBirth;
-        this.strDayBirth = strDayBirth;
-        this.strYearBirth = strYearBirth;
-        this.strInputLanguage = strInputLanguage;
-        this.strInputCity = strInputCity;
-        this.strInputZIP = strInputZIP;
-        this.strInputCountry = strInputCountry;
-        this.strPassword = strPassword;
-        this.strConfirmPassword = strConfirmPassword;
+    public RegisterUser(UTestData uTestData) {
+        this.uTestData = uTestData;
     }
 
-    public RegisterUser(String registeredUser) {
-        this.registeredUser = registeredUser;
-    }
-
-    public static RegisterUser the(String strFirstName, String strLastName, String strEmailAddress, String strMonthBirth, String strDayBirth, String strYearBirth, String strInputLanguage, String strInputCity, String strInputZIP, String strInputCountry, String strPassword, String registeredUser){
-        return Tasks.instrumented(RegisterUser.class, registeredUser);
+    public static RegisterUser the(UTestData uTestData) {
+        return Tasks.instrumented(RegisterUser.class,uTestData);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-            actor.attemptsTo( Enter.theValue(strFirstName).into(UTestRegisterUser.INPUT_FIRST_NAME),
-                Enter.theValue(strLastName).into(UTestRegisterUser.INPUT_LAST_NAME),
-                Enter.theValue(strEmailAddress).into(UTestRegisterUser.INPUT_EMAIL_ADDRESS),
+            actor.attemptsTo( Enter.theValue(uTestData.getStrFirstName()).into(UTestRegisterUser.INPUT_FIRST_NAME),
+                Enter.theValue(uTestData.getStrLastName()).into(UTestRegisterUser.INPUT_LAST_NAME));
+                /*Enter.theValue(strEmailAddress).into(UTestRegisterUser.INPUT_EMAIL_ADDRESS),
                 SelectFromOptions.byVisibleText(strMonthBirth).from(UTestRegisterUser.SELECT_MONTH),
                 SelectFromOptions.byVisibleText(strDayBirth).from(UTestRegisterUser.SELECT_DAY),
                 SelectFromOptions.byVisibleText(strYearBirth).from(UTestRegisterUser.SELECT_YEAR),
@@ -82,6 +55,6 @@ public class RegisterUser implements Task {
                 Click.on(UTestRegisterUser.CONFIRM_STAY_INFORMED),
                 Click.on(UTestRegisterUser.CONFIRM_TERMS),
                 Click.on(UTestRegisterUser.CONFIRM_PRIVACY),
-                Click.on(UTestRegisterUser.FINISH_BUTTON));
+                Click.on(UTestRegisterUser.FINISH_BUTTON));*/
     }
 }

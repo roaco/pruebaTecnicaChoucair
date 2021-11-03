@@ -14,7 +14,6 @@ public class UTestData {
     private String strPassword;
     private String strConfirmPassword;
 
-
     public String getStrFirstName() {
         return strFirstName;
     }

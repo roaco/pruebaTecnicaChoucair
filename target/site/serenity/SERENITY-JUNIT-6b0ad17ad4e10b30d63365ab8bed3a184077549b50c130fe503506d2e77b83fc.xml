@@ -1,13 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="uTest register" skipped="0" tests="1" time="14.5" timestamp="2021-11-03 01:11:22"><testcase name="Enter the registry by clicking on Join Today"><error message="Don't know how to convert &quot;Join Today&quot; into java.util.List.&#10;Try writing your own converter:&#10;&#10;@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)&#10;public class List {}&#10;" type="cucumber.runtime.CucumberException">Don't know how to convert "Join Today" into java.util.List.
-Try writing your own converter:
-
-@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)
-public class List {}
-</error><system-err>Don't know how to convert "Join Today" into java.util.List.
-Try writing your own converter:
-
-@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)
-public class List {}
-&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="uTest register" skipped="0" tests="1" time="30.67" timestamp="2021-11-03 11:02:03"><testcase name="Enter the registry by clicking on Join Today"><error message="Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. &#10;Step text: he opens the registration form" type="cucumber.runtime.CucumberException">Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step text: he opens the registration form</error><system-err>Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step text: he opens the registration form&#13;
 cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
 </system-err></testcase></testsuite>

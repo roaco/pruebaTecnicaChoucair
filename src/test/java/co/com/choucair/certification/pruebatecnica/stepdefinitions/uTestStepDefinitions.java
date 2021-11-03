@@ -27,26 +27,13 @@ public class uTestStepDefinitions {
 
     }
 
-    @When("^He clicks on the (.*) button$")
+    @When("^He clicks on the Join Today button$")
     public void heClicksOnTheJoinTodayButton(List<UTestData> uTestData) throws Exception {
-        OnStage.theActorInTheSpotlight().attemptsTo(RegisterUser.the(
-                uTestData.get(0).getStrFirstName(),
-                uTestData.get(0).getStrLastName(),
-                uTestData.get(0).getStrEmailAddress(),
-                uTestData.get(0).getStrMonthBirth(),
-                uTestData.get(0).getStrDayBirth(),
-                uTestData.get(0).getStrYearBirth(),
-                uTestData.get(0).getStrInputLanguage(),
-                uTestData.get(0).getStrInputCity(),
-                uTestData.get(0).getStrInputZIP(),
-                uTestData.get(0).getStrInputCountry(),
-                uTestData.get(0).getStrPassword(),
-                uTestData.get(0).getStrConfirmPassword()
-        ));
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterUser.the(uTestData.get(0)));
 
     }
 
-    @Then("^he opens the registration (.*)$")
+    @Then("^he opens the registration form$")
     public void heOpensTheRegistrationForm(List<UTestData> uTestData) throws Exception {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(uTestData.get(0).getStrFirstName())));
     }
