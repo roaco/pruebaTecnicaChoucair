@@ -20,7 +20,7 @@ public class UTestRegisterUser extends PageObject {
 
     public static final Target INPUT_LANGUAGES = Target.the("where the user enters the languages he speaks").located(By.className("ui-select-match"));
 
-    public static final Target NEXT_BUTTON_LOCATION = Target.the("Where the user will advance to the next form").located(By.className("material-icons"));
+    public static final Target NEXT_BUTTON_LOCATION = Target.the("Where the user will advance to the next form").located(By.xpath("//span[text()='Next: Location']"));
 
     public static final Target INPUT_CITY = Target.the("Where the user enters the city").located(By.id("city"));
 

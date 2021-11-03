@@ -11,7 +11,10 @@ import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import org.openqa.selenium.Keys;
 
-import java.security.Key;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class RegisterUser implements Task {
 
@@ -35,9 +38,12 @@ public class RegisterUser implements Task {
                 SelectFromOptions.byVisibleText("1991").from(UTestRegisterUser.SELECT_YEAR),
                 Click.on(UTestRegisterUser.INPUT_LANGUAGES),
                 Click.on(UTestRegisterUser.NEXT_BUTTON_LOCATION),
+                    WaitUntil.the(UTestRegisterUser.INPUT_CITY,
+                            isCurrentlyEnabled()).forNoMoreThan(15).seconds(),
                 Enter.theValue("Armenia").into(UTestRegisterUser.INPUT_CITY),
                 Hit.the(Keys.ARROW_DOWN).into(UTestRegisterUser.INPUT_CITY),
                 Hit.the(Keys.ENTER).into(UTestRegisterUser.INPUT_CITY),
+
                 Enter.theValue("630001").into(UTestRegisterUser.INPUT_POSTAL_CODE),
                 SelectFromOptions.byVisibleText("Colombia").from(UTestRegisterUser.SELECT_COUNTRY),
                 //Click.on(UTestRegisterUser.SELECT_COUNTRY),
