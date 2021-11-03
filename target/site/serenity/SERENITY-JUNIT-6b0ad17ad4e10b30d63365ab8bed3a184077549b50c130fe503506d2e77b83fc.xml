@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="uTest register" skipped="0" tests="1" time="35.47" timestamp="2021-11-02 07:01:03"><testcase name="Enter the registry by clicking on Join Today"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-co.com.choucair.certification.pruebatecnica.tasks.RegisterUser.performAs(RegisterUser.java:30)&#13;
-co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(uTestStepDefinitions.java:29)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="uTest register" skipped="0" tests="1" time="14.5" timestamp="2021-11-03 01:11:22"><testcase name="Enter the registry by clicking on Join Today"><error message="Don't know how to convert &quot;Join Today&quot; into java.util.List.&#10;Try writing your own converter:&#10;&#10;@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)&#10;public class List {}&#10;" type="cucumber.runtime.CucumberException">Don't know how to convert "Join Today" into java.util.List.
+Try writing your own converter:
+
+@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)
+public class List {}
+</error><system-err>Don't know how to convert "Join Today" into java.util.List.
+Try writing your own converter:
+
+@cucumber.deps.com.thoughtworks.xstream.annotations.XStreamConverter(ListConverter.class)
+public class List {}
+&#13;
 cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
 </system-err></testcase></testsuite>
