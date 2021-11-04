@@ -16,7 +16,10 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurr
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import org.openqa.selenium.Keys;
 
-import java.security.Key;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class RegisterUser implements Task {
     UTestData uTestData;
@@ -31,6 +34,7 @@ public class RegisterUser implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
             actor.attemptsTo( Enter.theValue(uTestData.getStrFirstName()).into(UTestRegisterUser.INPUT_FIRST_NAME),
                 Enter.theValue(uTestData.getStrLastName()).into(UTestRegisterUser.INPUT_LAST_NAME),
                 Enter.theValue(uTestData.getStrEmailAddress()).into(UTestRegisterUser.INPUT_EMAIL_ADDRESS),
@@ -56,11 +60,15 @@ public class RegisterUser implements Task {
                 Click.on(UTestRegisterUser.SELECT_MODEL),
                 Click.on(UTestRegisterUser.SELECT_OS_MOBILE),
                 Click.on(UTestRegisterUser.NEXT_BUTTON_LAST_STEP),
+
                 Enter.theValue(uTestData.getStrPassword()).into(UTestRegisterUser.CREATE_PASSWORD),
                 Enter.theValue(uTestData.getStrConfirmPassword()).into(UTestRegisterUser.CONFIRM_PASSWORD),
+
                 Click.on(UTestRegisterUser.CONFIRM_STAY_INFORMED),
                 Click.on(UTestRegisterUser.CONFIRM_TERMS),
                 Click.on(UTestRegisterUser.CONFIRM_PRIVACY),
+                WaitUntil.the(UTestRegisterUser.FINISH_BUTTON,
+                            isCurrentlyEnabled()).forNoMoreThan(40).seconds(),
                 Click.on(UTestRegisterUser.FINISH_BUTTON));
     }
 }

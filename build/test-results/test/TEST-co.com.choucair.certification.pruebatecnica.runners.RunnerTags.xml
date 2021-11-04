@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certification.pruebatecnica.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-NKQOBQF1" time="0.0">
   <properties/>
+<<<<<<< HEAD
   <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1e409b31
+=======
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3803050
+>>>>>>> main
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/uTest.feature:15 ?[0m# Enter the registry by clicking on Join Today
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+<<<<<<< HEAD
 0m48,337s
 
 cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData>) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
@@ -68,6 +73,18 @@ Step text: he opens the registration form
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
+=======
+0m47,161s
+
+java.lang.AssertionError: Expected answer
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(uTestStepDefinitions.java:35)
+	at ?.he opens the registration form(src/test/resources/features/uTest.feature:12)
+>>>>>>> main
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
