@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certification.pruebatecnica.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-NKQOBQF1" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@45a0a798
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1e409b31
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/uTest.feature:15 ?[0m# Enter the registry by clicking on Join Today
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-0m31,131s
+0m48,337s
 
 cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData>) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
 Step text: he opens the registration form
@@ -99,7 +99,7 @@ Step text: he opens the registration form
 
 TEST STARTED: Enter the registry by clicking on Join Today
 -------------------------------------------------------------------(utest-register;enter-the-registry-by-clicking-on-join-today)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@42606b70
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@630d2939
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

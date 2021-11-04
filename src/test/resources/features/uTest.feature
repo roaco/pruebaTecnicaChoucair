@@ -12,4 +12,4 @@
     Then he opens the registration form
     Examples:
       | strFirstName | strLastName  | strEmailAddress  | strMonthBirth  | strDayBirth  | strYearBirth | strInputLanguage | strInputCity | strInputZIP  | strInputCountry  | strPassword | strConfirmPassword  |
-      | Rodrigo      | Acosta       | rodrigo@test.com  | January       | 20           |  1994        | Spanish          |  Armenia     | 630001       |  Colombia        | Prueba123   | Prueba123           |
+      | Rodrigo      | Acosta       | rodrigo@test.com  | January       | 20           |  1994        | Spanish          |  Armenia     | 630001       |  Colombia        | Prueba123*   | Prueba123*           |
