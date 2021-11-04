@@ -1,14 +1,19 @@
 package co.com.choucair.certification.pruebatecnica.tasks;
 
+import co.com.choucair.certification.pruebatecnica.model.UTestData;
 import co.com.choucair.certification.pruebatecnica.userinterface.UTestJoinTodayPage;
 import co.com.choucair.certification.pruebatecnica.userinterface.UTestRegisterUser;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import org.openqa.selenium.Keys;
 
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -17,35 +22,36 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurr
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class RegisterUser implements Task {
+    UTestData uTestData;
 
-    private String registeredUser;
-
-
-    public RegisterUser(String registeredUser) {
-        this.registeredUser = registeredUser;
+    public RegisterUser(UTestData uTestData) {
+        this.uTestData = uTestData;
     }
 
-    public static RegisterUser the(String registeredUser){
-        return Tasks.instrumented(RegisterUser.class, registeredUser);
+    public static RegisterUser the(UTestData uTestData) {
+        return Tasks.instrumented(RegisterUser.class,uTestData);
     }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
-            actor.attemptsTo( Enter.theValue("Rodrigo").into(UTestRegisterUser.INPUT_FIRST_NAME),
-                Enter.theValue("Acosta Restrepo").into(UTestRegisterUser.INPUT_LAST_NAME),
-                Enter.theValue("pruebapru@utesting.com").into(UTestRegisterUser.INPUT_EMAIL_ADDRESS),
-                SelectFromOptions.byVisibleText("January").from(UTestRegisterUser.SELECT_MONTH),
-                SelectFromOptions.byVisibleText("11").from(UTestRegisterUser.SELECT_DAY),
-                SelectFromOptions.byVisibleText("1991").from(UTestRegisterUser.SELECT_YEAR),
+
+            actor.attemptsTo( Enter.theValue(uTestData.getStrFirstName()).into(UTestRegisterUser.INPUT_FIRST_NAME),
+                Enter.theValue(uTestData.getStrLastName()).into(UTestRegisterUser.INPUT_LAST_NAME),
+                Enter.theValue(uTestData.getStrEmailAddress()).into(UTestRegisterUser.INPUT_EMAIL_ADDRESS),
+                SelectFromOptions.byVisibleText(uTestData.getStrMonthBirth()).from(UTestRegisterUser.SELECT_MONTH),
+                SelectFromOptions.byVisibleText(uTestData.getStrDayBirth()).from(UTestRegisterUser.SELECT_DAY),
+                SelectFromOptions.byVisibleText(uTestData.getStrYearBirth()).from(UTestRegisterUser.SELECT_YEAR),
                 Click.on(UTestRegisterUser.INPUT_LANGUAGES),
                 Click.on(UTestRegisterUser.NEXT_BUTTON_LOCATION),
                 WaitUntil.the(UTestRegisterUser.INPUT_CITY,
-                            isCurrentlyEnabled()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Armenia").into(UTestRegisterUser.INPUT_CITY),
+                                isCurrentlyEnabled()).forNoMoreThan(15).seconds(),
+                Enter.theValue(uTestData.getStrInputCity()).into(UTestRegisterUser.INPUT_CITY),
                 Hit.the(Keys.ARROW_DOWN).into(UTestRegisterUser.INPUT_CITY),
                 Hit.the(Keys.ENTER).into(UTestRegisterUser.INPUT_CITY),
                 WaitUntil.the(UTestRegisterUser.INPUT_POSTAL_CODE,
-                            isCurrentlyEnabled()).forNoMoreThan(15).seconds(),
-                Enter.theValue("630001").into(UTestRegisterUser.INPUT_POSTAL_CODE),
+                                isCurrentlyEnabled()).forNoMoreThan(15).seconds(),
+                Enter.theValue(uTestData.getStrInputZIP()).into(UTestRegisterUser.INPUT_POSTAL_CODE),
+
                 Click.on(UTestRegisterUser.NEXT_BUTTON_DEVICES),
                 Click.on(UTestRegisterUser.SELECT_OS_COMPUTER),
                 Click.on(UTestRegisterUser.SELECT_VERSION),
@@ -54,8 +60,10 @@ public class RegisterUser implements Task {
                 Click.on(UTestRegisterUser.SELECT_MODEL),
                 Click.on(UTestRegisterUser.SELECT_OS_MOBILE),
                 Click.on(UTestRegisterUser.NEXT_BUTTON_LAST_STEP),
-                Enter.theValue("Prueba123*").into(UTestRegisterUser.CREATE_PASSWORD),
-                Enter.theValue("Prueba123*").into(UTestRegisterUser.CONFIRM_PASSWORD),
+
+                Enter.theValue(uTestData.getStrPassword()).into(UTestRegisterUser.CREATE_PASSWORD),
+                Enter.theValue(uTestData.getStrConfirmPassword()).into(UTestRegisterUser.CONFIRM_PASSWORD),
+
                 Click.on(UTestRegisterUser.CONFIRM_STAY_INFORMED),
                 Click.on(UTestRegisterUser.CONFIRM_TERMS),
                 Click.on(UTestRegisterUser.CONFIRM_PRIVACY),

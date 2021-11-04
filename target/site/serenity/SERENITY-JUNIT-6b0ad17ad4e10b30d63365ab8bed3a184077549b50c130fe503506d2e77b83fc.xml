@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="uTest register" skipped="0" tests="1" time="47.84" timestamp="2021-11-04 01:54:23"><testcase name="Enter the registry by clicking on Join Today"><error message="Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. &#10;Step text: he opens the registration form" type="cucumber.runtime.CucumberException">Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step text: he opens the registration form</error><system-err>Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData&gt;) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step text: he opens the registration form&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+=======
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="uTest register" skipped="0" tests="1" time="45.85" timestamp="2021-11-04 01:25:24"><testcase name="Enter the registry by clicking on Join Today"><failure message="Expected answer&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected answer
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;</failure><system-err>Expected answer
@@ -5,4 +11,5 @@ Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
 co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(uTestStepDefinitions.java:35)&#13;
 ✽.he opens the registration form(src/test/resources/features/uTest.feature:12)&#13;
+>>>>>>> main
 </system-err></testcase></testsuite>

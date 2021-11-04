@@ -1,5 +1,6 @@
 package co.com.choucair.certification.pruebatecnica.stepdefinitions;
 
+import co.com.choucair.certification.pruebatecnica.model.UTestData;
 import co.com.choucair.certification.pruebatecnica.questions.Answer;
 import co.com.choucair.certification.pruebatecnica.tasks.Login;
 import co.com.choucair.certification.pruebatecnica.tasks.OpenUp;
@@ -12,6 +13,8 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import java.util.List;
+
 public class uTestStepDefinitions {
     @Before
     public void setStage(){
@@ -19,20 +22,20 @@ public class uTestStepDefinitions {
     }
 
     @Given("^than Rodrigo wants to register in uTest$")
-    public void thanRodrigoWantsToRegisterInUTest() {
+    public void thanRodrigoWantsToRegisterInUTest() throws Exception{
         OnStage.theActorCalled("Rodrigo").wasAbleTo(OpenUp.thePage(), (Login.onThePage()));
 
     }
 
-    @When("^He clicks on the (.*) button$")
-    public void heClicksOnTheJoinTodayButton(String registeredUser) {
-        OnStage.theActorInTheSpotlight().attemptsTo(RegisterUser.the(registeredUser));
+    @When("^He clicks on the Join Today button$")
+    public void heClicksOnTheJoinTodayButton(List<UTestData> uTestData) throws Exception {
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterUser.the(uTestData.get(0)));
 
     }
 
-    @Then("^he opens the registration (.*)$")
-    public void heOpensTheRegistrationForm(String question) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
+    @Then("^he opens the registration form$")
+    public void heOpensTheRegistrationForm(List<UTestData> uTestData) throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(uTestData.get(0).getStrFirstName())));
     }
 
 }
