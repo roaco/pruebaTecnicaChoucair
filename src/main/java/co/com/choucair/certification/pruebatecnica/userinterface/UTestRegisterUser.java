@@ -26,9 +26,9 @@ public class UTestRegisterUser extends PageObject {
 
     public static final Target INPUT_POSTAL_CODE = Target.the("Where the user enters the postal code").located(By.id("zip"));
 
-    public static final Target SELECT_COUNTRY = Target.the("Where the user selects the country ").located(By.className("ui-select"));
+    public static final Target SELECT_COUNTRY = Target.the("Where the user selects the country ").located(By.className("ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid ng-valid-required auto-detected open"));
 
-    public static final Target NEXT_BUTTON_DEVICES = Target.the("Where the user advances to the next form ").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/div/a"));
+    public static final Target NEXT_BUTTON_DEVICES = Target.the("Where the user advances to the next form ").located(By.xpath("//span[text()='Next: Devices']"));
 
     public static final Target SELECT_OS_COMPUTER = Target.the("Where the user selects the computer's OS").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[1]/div[2]/div/div[1]/span/i"));
 

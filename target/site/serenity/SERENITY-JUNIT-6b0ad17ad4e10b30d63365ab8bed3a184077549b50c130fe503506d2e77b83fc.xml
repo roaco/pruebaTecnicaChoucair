@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="uTest register" skipped="0" tests="1" time="30.35" timestamp="2021-11-03 10:42:06"><testcase name="Enter the registry by clicking on Join Today"><error message="Element should have been &quot;select&quot; but was &quot;div&quot;&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-NKQOBQF1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.support.ui.UnexpectedTagNameException">Element should have been "select" but was "div"
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NKQOBQF1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: driver.version: unknown</error><system-err>Element should have been "select" but was "div"
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-NKQOBQF1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: driver.version: unknown&#13;
-co.com.choucair.certification.pruebatecnica.tasks.RegisterUser.performAs(RegisterUser.java:33)&#13;
-co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heClicksOnTheJoinTodayButton(uTestStepDefinitions.java:29)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="uTest register" skipped="0" tests="1" time="45.85" timestamp="2021-11-04 01:25:24"><testcase name="Enter the registry by clicking on Join Today"><failure message="Expected answer&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(uTestStepDefinitions.java:35)&#13;
+✽.he opens the registration form(src/test/resources/features/uTest.feature:12)&#13;
 </system-err></testcase></testsuite>
