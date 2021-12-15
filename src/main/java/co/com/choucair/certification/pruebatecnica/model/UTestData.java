@@ -13,6 +13,15 @@ public class UTestData {
     private String strInputCountry;
     private String strPassword;
     private String strConfirmPassword;
+    private String strAnswerd;
+
+    public String getStrAnswerd() {
+        return strAnswerd;
+    }
+
+    public void setStrAnswerd(String strAnswerd) {
+        this.strAnswerd = strAnswerd;
+    }
 
     public String getStrFirstName() {
         return strFirstName;

@@ -1,90 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.choucair.certification.pruebatecnica.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-NKQOBQF1" time="0.0">
+<testsuite name="co.com.choucair.certification.pruebatecnica.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="CHMEPPF1JVWF2" time="0.0">
   <properties/>
-<<<<<<< HEAD
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1e409b31
-=======
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3803050
->>>>>>> main
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@2aed7104
 
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/uTest.feature:15 ?[0m# Enter the registry by clicking on Join Today
-
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-<<<<<<< HEAD
-0m48,337s
-
-cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(UTestData>) in file:/C:/Users/roaco/Desktop/Proyectos/pruebaTecnicaChoucair/build/classes/java/test/' with pattern [^he opens the registration form$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
-Step text: he opens the registration form
-	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:111)
-	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:66)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-=======
-0m47,161s
-
-java.lang.AssertionError: Expected answer
-Expected: is <true>
-     but: was <false>
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at co.com.choucair.certification.pruebatecnica.stepdefinitions.uTestStepDefinitions.heOpensTheRegistrationForm(uTestStepDefinitions.java:35)
-	at ?.he opens the registration form(src/test/resources/features/uTest.feature:12)
->>>>>>> main
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+0m50,140s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -116,7 +37,7 @@ Expected: is <true>
 
 TEST STARTED: Enter the registry by clicking on Join Today
 -------------------------------------------------------------------(utest-register;enter-the-registry-by-clicking-on-join-today)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@630d2939
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@79f6b34c
 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

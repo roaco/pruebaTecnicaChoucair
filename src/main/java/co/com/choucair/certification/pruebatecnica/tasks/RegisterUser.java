@@ -12,14 +12,10 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import org.openqa.selenium.Keys;
-
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
 
 public class RegisterUser implements Task {
     UTestData uTestData;
@@ -42,6 +38,9 @@ public class RegisterUser implements Task {
                 SelectFromOptions.byVisibleText(uTestData.getStrDayBirth()).from(UTestRegisterUser.SELECT_DAY),
                 SelectFromOptions.byVisibleText(uTestData.getStrYearBirth()).from(UTestRegisterUser.SELECT_YEAR),
                 Click.on(UTestRegisterUser.INPUT_LANGUAGES),
+                //WaitUntil.the(UTestRegisterUser.NEXT_BUTTON_LOCATION, isEnabled()),
+                WaitUntil.the(UTestRegisterUser.NEXT_BUTTON_LOCATION,
+                            isCurrentlyEnabled()).forNoMoreThan(20).seconds(),
                 Click.on(UTestRegisterUser.NEXT_BUTTON_LOCATION),
                 WaitUntil.the(UTestRegisterUser.INPUT_CITY,
                                 isCurrentlyEnabled()).forNoMoreThan(15).seconds(),

@@ -10,6 +10,8 @@
       | strFirstName | strLastName  | strEmailAddress  | strMonthBirth  | strDayBirth  | strYearBirth | strInputLanguage | strInputCity | strInputZIP  | strInputCountry  | strPassword | strConfirmPassword  |
       |<strFirstName>|<strLastName>|<strEmailAddress>|<strMonthBirth>|<strDayBirth>|<strYearBirth>|<strInputLanguage>|<strInputCity>|<strInputZIP>|<strInputCountry>|<strPassword>|<strConfirmPassword>|
     Then he opens the registration form
+    | strAnswerd   |
+    | <strAnswerd> |
     Examples:
-      | strFirstName | strLastName  | strEmailAddress  | strMonthBirth  | strDayBirth  | strYearBirth | strInputLanguage | strInputCity | strInputZIP  | strInputCountry  | strPassword | strConfirmPassword  |
-      | Rodrigo      | Acosta       | rodrigo@test.com  | January       | 20           |  1994        | Spanish          |  Armenia     | 630001       |  Colombia        | Prueba123*   | Prueba123*           |
+      | strFirstName | strLastName  | strEmailAddress  | strMonthBirth  | strDayBirth  | strYearBirth | strInputLanguage | strInputCity | strInputZIP  | strInputCountry  | strPassword | strConfirmPassword  | strAnswerd      |
+      | Rodrigo      | Acosta       | rodrigo6@test.com  | January       | 20           |  1994        | Spanish          |  Armenia     | 630001       |  Colombia        | Prueba123*   | Prueba123*        | Complete Setup  |

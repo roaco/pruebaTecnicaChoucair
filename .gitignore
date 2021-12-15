@@ -34,8 +34,6 @@ hooks/pre-push
 
 # Java
 
-build/
-
 out/
 
 *.class
@@ -67,8 +65,6 @@ hs_err_pid*
  
 
 .gradle
-
-build/
 
 # Ignore Gradle GUI config
 

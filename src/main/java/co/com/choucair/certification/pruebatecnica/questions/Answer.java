@@ -20,7 +20,7 @@ public class Answer implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean result;
         String userRegisterAn = Text.of(UTestRegisterUser.FINISH_BUTTON).viewedBy(actor).asString();
-        if(!question.equals(userRegisterAn)){
+        if(question.equals(userRegisterAn)){
             result = true;
         }else{
             result = false;

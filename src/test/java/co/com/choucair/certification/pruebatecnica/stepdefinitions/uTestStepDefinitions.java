@@ -35,7 +35,7 @@ public class uTestStepDefinitions {
 
     @Then("^he opens the registration form$")
     public void heOpensTheRegistrationForm(List<UTestData> uTestData) throws Exception {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(uTestData.get(0).getStrFirstName())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(uTestData.get(0).getStrAnswerd())));
     }
 
 }
